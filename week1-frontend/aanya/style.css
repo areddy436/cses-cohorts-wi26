@@ -1,0 +1,188 @@
+/* ================================ */
+/* SECTION 2: BASE STYLES           */
+/* ================================ */
+
+/* TODO 4: Add Base Reset
+   Use * selector to:
+   - Set margin: 0
+   - Set padding: 0
+   - Set box-sizing: border-box
+*/
+* {
+   margin: 0; 
+   padding: 0; 
+   box-sizing: border-box;
+}
+
+
+/* TODO 5: Add CSS Variables
+   Use :root to define:
+   - --color-primary: #2c3e50
+   - --color-accent: #3498db
+   - --color-light: #f8f9fa
+   - --color-text: #333
+   - --color-text-light: #bdc3c7
+*/
+
+:root{
+   --color-primary: #2c3e50; 
+   --color-accent: #3498db; 
+   --color-light: #f8f9fa;
+   --color-text: #333;
+   --color-text-light: #bdc3c7;
+}
+
+
+/* TODO 6: Add Body Styles
+   Set font-family, line-height, and color using var()
+*/
+body {
+   font-family: 'Times New Roman', Times, serif, sans-serif;
+   line-height: 1.6;
+   color: var(--color-text);
+}
+
+
+
+
+/* ================================ */
+/* SECTION 3: HERO                  */
+/* ================================ */
+
+/* TODO 8: Style the Hero Section
+   .hero - background (use var), color, text-align, padding
+   .hero h1 - font-size, margin-bottom
+   .subtitle - font-size, color (use var)
+*/
+.hero{
+   background-color: var(--color-primary);
+   color: white; 
+   text-align: center;
+   padding: 4rem , 2rem;
+}
+
+.hero h1 {
+   font-size: 2.5rem;
+   margin-bottom: 0.5rem;
+}
+
+.subtitle {
+   font-size: 1.25rem;
+   color: var(--color-text-light);
+}
+
+
+
+/* ================================ */
+/* SECTION 4: ABOUT                 */
+/* ================================ */
+
+/* TODO 10: Style the About Section
+   .about - max-width, margin (with auto for centering), padding
+   .about h2 - margin-bottom
+*/
+
+.about {
+   max-width: 800px;
+   margin: 2rem auto;
+   padding: 0 2rem;
+}
+
+.about h2 {
+   margin-bottom: 1rem;
+}
+
+
+
+/* ================================ */
+/* SECTION 5: PROJECTS              */
+/* ================================ */
+
+/* TODO 12: Style the Projects Container
+   .projects - background-color (use var), padding
+   .projects h2 - text-align, margin-bottom
+   .project-grid - display flex, justify-content, gap, max-width, margin
+*/
+
+.projects{
+   background-color: var(--color-light);
+   padding: 3rem, 2rem;
+}
+.projects h2{
+   text-align: center;
+   margin-bottom: 2rem;
+}
+
+.project-grid {
+   display: flex;
+   justify-content: center;
+   gap: 2rem;
+   max-width: 900px;
+   margin: 0 auto;
+}
+
+
+/* TODO 13: Style the Project Cards
+   .project-card - background, padding, border-radius, width, box-shadow
+   .project-card h3 - margin-bottom, color (use var)
+   .project-card p - margin-bottom, color
+   .project-card a - color (use var), text-decoration
+*/
+.project-card {
+   background: white;
+   padding: 1.5rem;
+   border-radius: 8px;
+   width: 300px;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+   margin-bottom: 0.5rem;
+   color: var(--color-primary);
+}
+
+.project-card p {
+   margin-bottom: 1rem;
+   color: #666;
+}
+
+.project-card a {
+   color: var(--color-accent);
+   text-decoration: none;
+}
+
+
+
+/* ================================ */
+/* SECTION 6: FOOTER                */
+/* ================================ */
+
+/* TODO 15: Style the Footer
+   .footer - background-color (use var), color, text-align, padding
+   .social-links - list-style, display flex, justify-content, gap, margin-top
+   .social-links a - color (use var), text-decoration
+*/
+
+
+
+/* ================================ */
+/* BONUS: HOVER EFFECTS             */
+/* ================================ */
+
+/* BONUS TODO 1: Add transition to .project-card */
+
+/* BONUS TODO 2: Add hover states
+   .project-card:hover - transform, box-shadow
+   .social-links a:hover - lighter color
+   .project-card a:hover - text-decoration underline
+*/
+
+
+
+/* ================================ */
+/* BONUS: PROFILE IMAGE             */
+/* ================================ */
+
+/* BONUS TODO 4: Style profile image
+   .profile-img - width, height, border-radius 50%, object-fit, margin-bottom, border
+*/
